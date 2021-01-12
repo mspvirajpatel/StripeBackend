@@ -13,7 +13,7 @@ if (!isset($_POST['api_version']))
     exit(http_response_code(400));
 }
 try {
-    \Stripe\Stripe::setApiKey('sk_test_nPdYeoBLMmIE4lYcuX0ixLc700aonA2sCZ');
+    \Stripe\Stripe::setApiKey('sk_test_51I8K5DBBoSUZao984DJFdmwcyjxLS52iypstXjb3Vw7rB7y1HKV2C66ljujEpYeKDdHTysaHfIkLjIM9aDsbw9aW00a3tFBRgT');
     $key = \Stripe\EphemeralKey::create(
       ["customer" => $customerId],
       ["stripe_version" => $_POST['api_version']]
